@@ -7,3 +7,16 @@ body {
 a {
   color: #00B7FF;
 }
+
+.jia-gradient {
+  h2 {
+    color: pink;
+    text-align: center;
+  }
+  video {
+    margin: 0 auto;
+  }
+  width: fit-content;
+  padding: 20px;
+  background-image: linear-gradient(to bottom right, black, purple, violet, purple, violet, purple, black);
+}
