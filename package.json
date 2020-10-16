@@ -1,0 +1,21 @@
+{
+  "name": "takas-playground",
+  "version": "1.0.0",
+  "description": "Taka's playground website",
+  "scripts": {
+    "install": "cd ./backend && npm install",
+    "uninstall": "cd ./backend && npm uninstall",
+    "start": "cd ./backend && npm start",
+    "test": "cd ./backend && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boomtakalaka/takas-playground.git"
+  },
+  "author": "Takayuki Ibaraki",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/boomtakalaka/takas-playground/issues"
+  },
+  "homepage": "https://github.com/boomtakalaka/takas-playground#readme"
+}

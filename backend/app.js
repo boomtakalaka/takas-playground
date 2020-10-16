@@ -25,8 +25,7 @@ app.use(sassMiddleware({
   dest: path.join(__dirname, 'public', 'stylesheets'),
   indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true,
-  prefix: '/stylesheets',
-  debug: true
+  prefix: '/stylesheets'
 }))
 app.use(express.static(path.join(__dirname, 'public')))
 
