@@ -17,8 +17,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(sassMiddleware({
-  src: path.join(__dirname, 'sass'),
-  dest: path.join(__dirname, 'public', 'stylesheets'),
+  src: path.join(__dirname, '../sass'),
+  dest: path.join(__dirname, '../public', 'stylesheets'),
   indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true,
   prefix: '/stylesheets'
