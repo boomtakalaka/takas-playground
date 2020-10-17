@@ -1,8 +1,6 @@
 import http from 'http'
-import debug from 'debug'
-import app from './app.js'
+import app from '@/app'
 
-const serverDebugger = debug('backend:server')
 /**
  * Get port from environment and store in Express.
  */
@@ -14,7 +12,7 @@ app.set('port', port)
  * Normalize a port into a number, string, or false.
  */
 
-function normalizePort (val) {
+function normalizePort (val: any) {
   const port = parseInt(val, 10)
 
   if (isNaN(port)) {
@@ -34,7 +32,7 @@ function normalizePort (val) {
  * Event listener for HTTP server "error" event.
  */
 
-function onError (error) {
+function onError (error: any) {
   if (error.syscall !== 'listen') {
     throw error
   }
@@ -63,7 +61,7 @@ function onError (error) {
 function onListening () {
   const addr = server.address()
   const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port
-  serverDebugger('Listening on ' + bind)
+  console.log('Listening on ' + bind)
 }
 
 /**

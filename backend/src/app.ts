@@ -1,14 +1,10 @@
 import nunjucks from 'nunjucks'
 import express from 'express'
-import path, { dirname } from 'path'
+import path from 'path'
 import cookieParser from 'cookie-parser'
 import logger from 'morgan'
 import sassMiddleware from 'node-sass-middleware'
-import indexRouter from './routes/index.js'
-import { fileURLToPath } from 'url'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+import indexRouter from '@/routes'
 
 const app = express()
 
